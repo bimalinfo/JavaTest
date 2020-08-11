@@ -34,6 +34,7 @@ public class ArticleController {
 
 	@GetMapping("/articles")
 	public ResponseEntity<List<Article>> getAllArticles(@RequestParam(required = false) String title) {
+		System.out.println("Changes Done");
 		try {
 			List<Article> articles = new ArrayList<Article>();
 
